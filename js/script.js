@@ -18,12 +18,11 @@
 // input
 
 var email = prompt("Inserisci la tua e-mail");
-console.log(email);
 
 var cognome = prompt("Inserisci il tuo cognome");
-console.log(cognome);
 
 var cognomi = ["Bianchi", "Neri", "Rossi", "Verdi", "Gialli"];
+cognomi.push(cognome);
 
 //controllo accesso
 
@@ -44,3 +43,23 @@ if (controllo == "yes"){
     alert("Il suo cognome non è nella lista degli autorizzati ma è stato appena aggiunto.");
 
 }
+
+// ordinamento 
+
+cognomi.sort();
+document.getElementById("demo").innerHTML = cognomi;
+
+var j = 0;
+
+while (cognome != cognomi[j]) {
+
+    // if (cognome == cognomi[j]) {
+    //     var controllo2 = j;
+    // }
+
+    j++;
+    
+}
+
+j += 1;
+alert("Il suo cognome si trova in posizione " + j + ".")
