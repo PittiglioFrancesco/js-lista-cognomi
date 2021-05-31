@@ -21,6 +21,13 @@ var email = prompt("Inserisci la tua e-mail");
 
 var cognome = prompt("Inserisci il tuo cognome");
 
+//bonus
+var firstLetter = cognome.charAt(0);
+firstLetter = firstLetter.charAt(0).toUpperCase();
+var restOfWord = cognome.slice(1)
+cognome = firstLetter + restOfWord;
+
+
 var cognomi = ["Bianchi", "Neri", "Rossi", "Verdi", "Gialli"];
 cognomi.push(cognome);
 
