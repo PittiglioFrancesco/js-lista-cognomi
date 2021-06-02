@@ -28,10 +28,32 @@ var restOfWord = cognome.slice(1)
 cognome = firstLetter + restOfWord;
 
 
+var listaMail = ["ciccio@gmail.com", "pino@gmail.com", "masto@gmail.com", "dario@gmail.com"];
+
 var cognomi = ["Bianchi", "Neri", "Rossi", "Verdi", "Gialli"];
 cognomi.push(cognome);
 
-//controllo accesso
+//controllo accesso email
+
+for (var i = 0; i < 4; i++){
+
+    if (email == listaMail[i]){
+        var mailCheck = "yes";
+    }
+
+}
+
+if (controllo == "yes"){
+
+    alert("La sua e-mail è nella lista degli autorizzati.");
+
+} else {
+
+    alert("La sua e-mail non è nella lista degli autorizzati.");
+
+}
+
+//controllo accesso cognome
 
 for (var i = 0; i < 4; i++){
 
